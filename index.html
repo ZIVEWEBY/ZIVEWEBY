@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rozhodovací formulář</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Rozhodovací formulář: Jaký přístup zvolit?</h1>
+      <p class="subtitle">Vyplň krátký formulář a hned zjistíš doporučenou cestu.</p>
+
+      <section class="card" id="form-card">
+        <div class="step-indicator" id="step-indicator">Krok 1/2</div>
+        <h2 id="question-title"></h2>
+        <p id="question-description" class="question-description"></p>
+        <div id="options" class="options"></div>
+
+        <div class="actions">
+          <button id="back-btn" class="btn secondary" type="button">Zpět</button>
+          <button id="reset-btn" class="btn ghost" type="button">Začít znovu</button>
+        </div>
+      </section>
+
+      <section class="card hidden" id="result-card">
+        <h2>Tvoje doporučení</h2>
+        <p id="result-text" class="result-text"></p>
+        <p id="result-detail" class="result-detail"></p>
+        <button id="result-reset-btn" class="btn" type="button">Vyplnit znovu</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
